@@ -1,12 +1,12 @@
 {
-  "name": "with-typescript",
-  "version": "1.0.0",
+  "name": "stroly-open-pages",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3030",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc  --noEmit",
-    "test": "npm run type-check && jest"
+    "test": "npm run type-check && jest --watch"
   },
   "dependencies": {
     "next": "latest",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.13",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
@@ -29,15 +30,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "jest": "^26.4.2",
     "jest-enzyme": "^7.1.2",
     "prettier": "^2.1.1",
     "ts-jest": "^26.3.0",
     "typescript": "4.0"
   },
-  "license": "MIT",
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  }
+  "license": "MIT"
 }
